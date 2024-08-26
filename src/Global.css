@@ -4,10 +4,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* @tailwind base;
+@tailwind utilities;
+@tailwind components; */
+
 .container {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns:  minmax(60px, auto) 1fr;
     grid-template-rows: 100px 1fr 50px;
     grid-template-areas:
         "sidebar header header"
@@ -16,36 +20,34 @@ body {
     ;
 }
 
-@media (width < 500px) {
-    .container {
-        grid-template-columns: minmax(100px, 1fr) 1fr;
-    }
-}
-
 .container header {
     display: grid;
     grid-area: header;
-    border: 0.5px solid black;
-    place-items: center;
+    height: 100%;
+    /* align-items: center; */
 }
 
 .container aside {
     display: grid;
     grid-area: sidebar;
-    border: 0.5px solid black;
-    place-items: center;
+    width: 100%;
 }
 
 .container main {
     display: grid;
     grid-area: content;
-    border: 0.5px solid black;
     place-items: center;
 }
 
 .container footer {
     display: grid;
     grid-area: footer;
-    border: 0.5px solid black;
     place-items: center;
+    border-top: 0.5px solid black;
 }
+
+/* @media (width < 500px) {
+    .container {
+        grid-template-columns: minmax(100px, 1fr) 1fr;
+    }
+} */

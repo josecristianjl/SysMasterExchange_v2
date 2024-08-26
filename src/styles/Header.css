@@ -1,0 +1,57 @@
+.header-container {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+}
+
+.header-container .MuiToolbar-root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    color: black;
+}
+
+.sidebar-button {
+    display: grid;
+    align-items: center;
+    justify-self: start;
+    height: 50px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+    border-radius: 12px !important;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: #f0f0f0; /* Fondo ligeramente más oscuro al hacer hover */
+}
+
+.user-container {
+    display: grid;
+    align-items: center;
+    justify-self: end;
+    height: 50px;
+    grid-template-columns: auto 1fr;
+    background-color: #fff;
+    border-radius: 8px !important;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: black !important;
+}
+
+.user-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #374151;
+    padding: 12px;
+    margin: 0;
+}
+
+.user-settings {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px!important;
+}
